@@ -11,12 +11,12 @@ Input pins are debounced with a 25ms timer, MQTT topics follow the [mqtt-smartho
 Output pins can be set with a timeout, if you e.g. publish {"val": 1, "timeout": 5000} to esp1/set/gpio/3 the gpio 3 will go to high and return to low after 5000ms
 
 
+![breadboard](images/breadboard.jpg "Breadboard")
+
+
 ## Credits
 
 Used [this article from foobarflies](http://www.foobarflies.io/a-simple-connected-object-with-nodemcu-and-mqtt/) as a starting point.
-
-
-![breadboard](https://github.com/hobbyquaker/nodemcu-gpiomqtt/master/images/breadboard.jpg "Breadboard")
 
 
 ## License
