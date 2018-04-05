@@ -30,7 +30,7 @@ end
 
 
 local function mqtt_start()  
-    m = mqtt.Client(config.ID, 120)
+    m = mqtt.Client(config.ID, 120, config.USER, config.PASS)
     m:lwt(config.ENDPOINT .. "connected", "0", 0, true)
 
     for k,v in pairs(config.GPIO) do
