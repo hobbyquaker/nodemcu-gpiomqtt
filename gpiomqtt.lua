@@ -140,7 +140,7 @@ local function wifi_start(list_aps)
         for key,value in pairs(list_aps) do
             if config.SSID and config.SSID[key] then
                 wifi.setmode(wifi.STATION);
-                wifi.sta.config(key,config.SSID[key])
+                wifi.sta.config{ssid=key,pwd=config.SSID[key]}
                 wifi.sta.connect()
                 print("Connecting to " .. key .. " ...")
                 --config.SSID = nil  -- can save memory
